@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+# Kumkum-Portfolio
 
-## Project info
+Personal portfolio website showcasing my work, experience, and achievements in AI/ML engineering and research.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Features
 
-## How can I edit this code?
+- Modern, responsive design with light/dark theme support
+- Dynamic animations and smooth scrolling
+- Sections: Hero, About, Expertise, Skills, Experience, Projects, Achievements, Hackathons, Resume, and Contact
+- Interactive components with modal dialogs
+- Optimized for performance and SEO
 
-There are several ways of editing your application.
+## 🛠️ Technologies
 
-**Use Lovable**
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Theme Management**: next-themes
+- **Icons**: Lucide React
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 📦 Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# Clone the repository
+git clone https://github.com/Kumkum-Mishra/Kumkum-Portfolio.git
 
-**Use your preferred IDE**
+# Navigate to project directory
+cd Kumkum-Portfolio
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# Install dependencies
+npm install
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🏗️ Build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# Build for production
+npm run build
 
-**Use GitHub Codespaces**
+# Preview production build
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🌐 Deployment
 
-## What technologies are used for this project?
+This project is deployed on Vercel. To deploy:
 
-This project is built with:
+1. Push your code to GitHub
+2. Import the repository on [Vercel](https://vercel.com)
+3. Vercel will automatically detect Vite and configure the build settings
+4. Deploy!
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📄 License
 
-## How can I deploy this project?
+This project is open source and available under the MIT License.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 👤 Author
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Kumkum Mishra**
+- Email: Kumkummishra892004@gmail.com
+- GitHub: [@Kumkum-Mishra](https://github.com/Kumkum-Mishra)
+- LinkedIn: [kumkum-mishra-2442a82b8](https://linkedin.com/in/kumkum-mishra-2442a82b8)
+- Twitter: [@Kumkum892004](https://x.com/Kumkum892004)
