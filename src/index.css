@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* Reference Image Theme - Light Blue with Grid */
+    --background: 200 50% 95%;
+    --foreground: 215 75% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 75% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 75% 20%;
+
+    /* Vibrant Blue Primary - Like Reference */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 50% 92%;
+    --secondary-foreground: 215 75% 20%;
+
+    --muted: 200 50% 92%;
+    --muted-foreground: 215 50% 40%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 200 50% 95%;
+
+    --border: 200 30% 85%;
+    --input: 200 30% 85%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+
+    /* Custom Reference Theme Tokens */
+    --text-primary: 215 75% 20%;
+    --text-secondary: 215 50% 35%;
+    --text-muted: 215 40% 50%;
+    --surface-subtle: 200 50% 97%;
+    --surface-hover: 200 50% 94%;
+    --accent-light: 217 91% 95%;
+    --divider: 200 30% 85%;
+    --gradient-start: 217 91% 60%;
+    --gradient-end: 200 80% 55%;
+  }
+
+  .dark {
+    /* Royal Blue Dark Theme */
+    --background: 225 40% 10%;
+    --foreground: 220 30% 95%;
+
+    --card: 225 40% 12%;
+    --card-foreground: 220 30% 95%;
+
+    --popover: 225 40% 12%;
+    --popover-foreground: 220 30% 95%;
+
+    --primary: 225 70% 60%;
+    --primary-foreground: 225 40% 10%;
+
+    --secondary: 225 40% 15%;
+    --secondary-foreground: 220 30% 95%;
+
+    --muted: 225 40% 15%;
+    --muted-foreground: 225 25% 65%;
+
+    --accent: 225 70% 60%;
+    --accent-foreground: 225 40% 10%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 220 30% 95%;
+
+    --border: 225 40% 18%;
+    --input: 225 40% 18%;
+    --ring: 225 70% 60%;
+
+    --text-primary: 220 30% 95%;
+    --text-secondary: 225 25% 75%;
+    --text-muted: 225 25% 65%;
+    --surface-subtle: 225 40% 11%;
+    --surface-hover: 225 40% 15%;
+    --accent-light: 225 70% 20%;
+    --divider: 225 40% 18%;
+    --gradient-start: 225 70% 60%;
+    --gradient-end: 240 60% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    @apply font-semibold tracking-tight;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-4xl mx-auto px-6 py-12 md:py-16;
+  }
+
+  .section-title {
+    @apply text-xs font-semibold uppercase tracking-widest text-primary mb-8;
+    letter-spacing: 0.15em;
+  }
+
+  .card-subtle {
+    @apply bg-white dark:bg-[hsl(var(--card))] rounded-xl p-6 transition-all duration-300 hover:bg-[hsl(var(--surface-hover))] hover:shadow-lg border border-[hsl(var(--border))];
+  }
+
+  .link-accent {
+    @apply text-primary hover:text-[hsl(var(--gradient-end))] hover:underline underline-offset-4 transition-colors font-medium;
+  }
+
+  .tag {
+    @apply inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold bg-[hsl(var(--accent-light))] text-primary border border-primary/20;
+  }
+
+  .divider {
+    @apply border-t border-[hsl(var(--divider))];
+  }
+
+  /* Reference Image Grid Pattern Background */
+  .bg-pattern {
+    background-color: hsl(200, 50%, 95%);
+    background-image: 
+      linear-gradient(hsl(217, 50%, 80%) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(217, 50%, 80%) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 0;
+  }
+
+  /* Reference Image Style - Clean Blue Text */
+  .gradient-text {
+    color: hsl(217, 91%, 60%);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  /* Glass Morphism Effect */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(210, 40%, 90%, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(210, 100%, 50%, 0.1);
+  }
+
+  /* Text Glow Effect */
+  .text-glow-effect {
+    text-shadow: 
+      0 0 10px hsl(210, 100%, 60%),
+      0 0 20px hsl(210, 100%, 60%),
+      0 0 30px hsl(200, 100%, 65%);
+    animation: text-glow 3s ease-in-out infinite;
+  }
+
+  /* Shiny Text Effect */
+  .text-shine-effect {
+    background: linear-gradient(
+      90deg,
+      hsl(215, 80%, 25%) 0%,
+      hsl(210, 100%, 60%) 50%,
+      hsl(215, 80%, 25%) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: text-shine 3s linear infinite;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-in {
+    animation-name: fade-in;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+  }
+
+  .fade-in {
+    animation-name: fade-in;
+  }
+
+  .slide-in-from-left {
+    animation-name: slide-in-from-left;
+  }
+
+  .slide-in-from-right {
+    animation-name: slide-in-from-right;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .delay-700 {
+    animation-delay: 700ms;
+  }
+}
