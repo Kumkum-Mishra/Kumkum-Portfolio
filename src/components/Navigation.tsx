@@ -18,7 +18,7 @@ const Navigation = () => {
       setScrolled(window.scrollY > 20);
       
       // Determine active section based on scroll position
-      const sections = ["home", "about", "expertise", "skills", "experience", "projects", "achievements", "hackathons", "resume", "contact"];
+      const sections = ["home", "about", "expertise", "skills", "certifications", "experience", "projects", "achievements", "hackathons", "resume", "contact"];
       const scrollPosition = window.scrollY + 150;
       
       // Check if we're at the top (home)
@@ -48,6 +48,7 @@ const Navigation = () => {
     { href: "#about", label: "About", id: "about" },
     { href: "#expertise", label: "Expertise", id: "expertise" },
     { href: "#skills", label: "Skills", id: "skills" },
+    { href: "#certifications", label: "Certifications", id: "certifications" },
     { href: "#experience", label: "Experience", id: "experience" },
     { href: "#projects", label: "Projects", id: "projects" },
     { href: "#achievements", label: "Achievements", id: "achievements" },
