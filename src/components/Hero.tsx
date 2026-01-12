@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, FileText, Rocket, Coffee, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin, FileText, Rocket, Coffee, Twitter, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -91,6 +91,15 @@ const Hero = () => {
                 aria-label="Email"
               >
                 <Mail className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.upwork.com/freelancers/~0167e2a1978067b44f"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[hsl(215,75%,20%)] hover:text-[hsl(217,91%,60%)] transition-colors shadow-sm"
+                aria-label="Upwork"
+              >
+                <Briefcase className="w-5 h-5" />
               </a>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, Twitter, MapPin, Clock } from "lucide-react";
+import { Mail, Github, Linkedin, Twitter, MapPin, Clock, Briefcase } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
@@ -21,6 +21,11 @@ const Contact = () => {
       icon: Mail,
       href: "mailto:Kumkummishra892004@gmail.com",
       label: "Email",
+    },
+    {
+      icon: Briefcase,
+      href: "https://www.upwork.com/freelancers/~0167e2a1978067b44f",
+      label: "Upwork",
     },
   ];
 
