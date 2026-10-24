@@ -35,7 +35,7 @@ const Projects = () => {
       description:
         "Built a full-stack personalized digest and learning assistant that aggregates Hacker News, Reddit, and RSS feeds, converts user engagement into a compact user knowledge profile (UKP), and generates weekly LLM-powered learning roadmaps with role-specific plans and AI-graded practice, processing 30+ news items weekly. Improved system usability and reliability through session-state caching, safe Streamlit reruns, defensive schema handling, and routing fixes to deliver a stable, responsive end-to-end learning workflow.",
       tech: ["FastAPI", "Streamlit", "SQLite", "Docker", "Groq/Ollama"],
-      link: "#",
+      link: "https://github.com/Kumkum-Mishra/NeuroDigest",
     },
     {
       name: "ShareWay",
@@ -43,7 +43,7 @@ const Projects = () => {
       description:
         "Accomplished an AI-powered carpooling platform enabling users to book or offer rides through intelligent route and time matching. Integrated secure Aadhaar-based identity verification, in-app payments, and dual driver–passenger modes. Designed a reward system offering cashback and points for rides and a CO2 impact tracker to promote eco-friendly commuting and reduce carbon emissions in urban areas.",
       tech: ["AI Route Matching", "e-KYC Integration", "Impact Analytics"],
-      link: "#",
+      link: "https://github.com/Kumkum-Mishra/ShareWay",
     },
   ];
 
@@ -86,8 +86,10 @@ const Projects = () => {
                   </div>
                   <a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[hsl(215,50%,40%)] dark:text-[hsl(210,40%,75%)] hover:text-[hsl(217,91%,60%)] dark:hover:text-[hsl(210,100%,70%)] transition-colors shrink-0 p-2 hover:bg-[hsl(217,91%,95%)] dark:hover:bg-[hsl(210,70%,20%)] rounded-lg"
-                    aria-label={`View ${project.name}`}
+                    aria-label={`View ${project.name} on GitHub`}
                   >
                     <ExternalLink className="w-5 h-5" />
                   </a>

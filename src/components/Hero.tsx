@@ -26,9 +26,7 @@ const Hero = () => {
 
             {/* Description - Blueish */}
             <p className="text-base md:text-lg text-[hsl(217,70%,35%)] dark:text-[hsl(210,60%,75%)] leading-relaxed max-w-2xl">
-              I'm a 3rd Year B.Tech CSE Student specializing in Machine Learning and Deep Learning. 
-              Building scalable ML systems at the intersection of deep learning, computer vision, 
-              and large language models. Focused on applied research with production-grade implementations.
+              I'm a 4th-year B.Tech CSE student specializing in Machine Learning and Deep Learning. My work explores challenges in computer vision, large language models, and efficient AI, combining experimental research and empirical evaluation to understand model behavior, investigate limitations, and identify potential improvements. I enjoy translating research ideas into practical, well-evaluated ML systems.
             </p>
 
             {/* CTA Buttons - Reference Style */}
